@@ -1,6 +1,6 @@
 {
   "name": "react-codemirror-component",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Codemirror Component",
   "main": "lib/cjs/CodeMirrorComponent.js",
   "mobule": "lib/esm/CodeMirrorComponent.js",
