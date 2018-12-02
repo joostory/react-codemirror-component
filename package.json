@@ -2,9 +2,11 @@
   "name": "react-codemirror-component",
   "version": "0.1.0",
   "description": "React Codemirror Component",
-  "main": "index.js",
+  "main": "./lib/CodeMirrorComponent",
+  "module": "./src/CodeMirrorComponent",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/joostory/react-codemirror-component#readme",
   "dependencies": {
     "autobind": "^1.0.3",
+    "autobind-decorator": "^2.4.0",
     "classnames": "^2.2.6",
     "lodash.isequal": "^4.5.0",
     "prop-types": "^15.6.2"
@@ -30,5 +33,16 @@
     "codemirror": ">= 5.0",
     "react": ">= 16.0",
     "react-dom": ">= 16.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "codemirror": "^5.42.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }
