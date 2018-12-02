@@ -1,0 +1,34 @@
+{
+  "name": "react-codemirror-component",
+  "version": "0.1.0",
+  "description": "React Codemirror Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostory/react-codemirror-component.git"
+  },
+  "keywords": [
+    "React",
+    "Codemirror"
+  ],
+  "author": "Joo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joostory/react-codemirror-component/issues"
+  },
+  "homepage": "https://github.com/joostory/react-codemirror-component#readme",
+  "dependencies": {
+    "autobind": "^1.0.3",
+    "classnames": "^2.2.6",
+    "lodash.isequal": "^4.5.0",
+    "prop-types": "^15.6.2"
+  },
+  "peerDependencies": {
+    "codemirror": ">= 5.0",
+    "react": ">= 16.0",
+    "react-dom": ">= 16.0"
+  }
+}
