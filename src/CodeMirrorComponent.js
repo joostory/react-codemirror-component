@@ -155,4 +155,4 @@ CodeMirrorComponent.propTypes = {
   preserveScrollPosition: PropTypes.bool
 }
 
-export default CodemirrorComponent
+export default CodeMirrorComponent
