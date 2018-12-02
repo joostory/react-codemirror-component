@@ -2,11 +2,16 @@
   "name": "react-codemirror-component",
   "version": "0.1.1",
   "description": "React Codemirror Component",
-  "main": "./lib/CodeMirrorComponent",
-  "module": "./src/CodeMirrorComponent",
+  "main": "lib/cjs/CodeMirrorComponent.js",
+  "mobule": "lib/esm/CodeMirrorComponent.js",
+  "es": "src/CodeMirrorComponent.js",
   "scripts": {
+    "clean": "rm -rf lib",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "build:es5": "babel src --out-dir lib/cjs --ignore \"src/__tests__/*.js\"",
+    "build:module": "babel --config-file ./babel.config.es.js src --out-dir lib/esm --ignore \"src/__tests__/*.js\"",
+    "build": "npm run build:es5 && npm run build:module",
+    "prepare": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
