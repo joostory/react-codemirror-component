@@ -7,7 +7,7 @@
   "es": "src/CodeMirrorComponent.js",
   "scripts": {
     "clean": "rm -rf lib",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build:es5": "babel src --out-dir lib/cjs --ignore \"src/__tests__/*.js\"",
     "build:module": "babel --config-file ./babel.config.es.js src --out-dir lib/esm --ignore \"src/__tests__/*.js\"",
     "build": "npm run build:es5 && npm run build:module",
@@ -32,7 +32,7 @@
     "autobind-decorator": "^2.4.0",
     "classnames": "^2.2.6",
     "lodash.isequal": "^4.5.0",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "codemirror": ">= 5.0",
@@ -40,14 +40,15 @@
     "react-dom": ">= 16.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-decorators": "^7.1.6",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-react": "^7.0.0",
-    "codemirror": "^5.42.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "codemirror": "^5.50.0",
+    "jest": "^24.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
